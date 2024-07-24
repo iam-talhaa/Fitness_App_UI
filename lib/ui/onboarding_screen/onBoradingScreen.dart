@@ -29,6 +29,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 width: MediaQuery.of(context).size.width * 1,
                 decoration: BoxDecoration(color: Colors.black),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -41,6 +42,11 @@ class _OnboardScreenState extends State<OnboardScreen> {
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                           color: Color(0xffFFFFFF)),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 1 / 3,
+                      width: double.infinity,
+                      decoration: BoxDecoration(),
                     )
                   ],
                 ),
