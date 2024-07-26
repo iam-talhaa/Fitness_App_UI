@@ -20,6 +20,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
   ];
   @override
   Widget build(BuildContext context) {
+    print('Testing');
     return Scaffold(
         body: PageView.builder(
             itemCount: 3,
