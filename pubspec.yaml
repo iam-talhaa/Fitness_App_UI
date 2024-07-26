@@ -66,6 +66,7 @@ flutter:
     - Assets/images/p2.png
     - Assets/images/p2b.png
     - Assets/images/p3.png
+    - Assets/images/s_pic.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -17,6 +17,7 @@ class _FitnessState extends State<Fitness> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
   }
