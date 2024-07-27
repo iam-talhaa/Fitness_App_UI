@@ -18,6 +18,13 @@ class _OnboardScreenState extends State<OnboardScreen> {
     'to stay fit',
     'Pushing limits\nsurpassing boundaries'
   ];
+
+  List<String> MyPics = [
+    'Assets/images/P1.png',
+    'Assets/images/p2b.png',
+    'Assets/images/p3.png'
+  ];
+
   @override
   Widget build(BuildContext context) {
     print('Testing');
@@ -34,6 +41,9 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      height: 50,
+                    ),
                     Text(
                       subHeading[index].toString(),
                       style: TextStyle(fontSize: 16, color: Colors.white),
@@ -48,7 +58,9 @@ class _OnboardScreenState extends State<OnboardScreen> {
                     Container(
                       height: MediaQuery.of(context).size.height * 1 / 3,
                       width: double.infinity,
-                      decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage(MyPics[index]))),
                     )
                   ],
                 ),
