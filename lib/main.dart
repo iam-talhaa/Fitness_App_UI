@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/Auth/LoginScreen.dart';
 import 'package:fitness_app/ui/onboarding_screen/onBoradingScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class _FitnessState extends State<Fitness> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardScreen(),
+      home: LoginScreen(),
     );
   }
 }
