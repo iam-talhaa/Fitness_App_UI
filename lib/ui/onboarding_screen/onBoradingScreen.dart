@@ -1,3 +1,5 @@
+import 'package:fitness_app/ui/SplashScreen.dart';
+import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -106,7 +108,19 @@ class _OnboardScreenState extends State<OnboardScreen> {
                           ),
                         ],
                       ),
-                    )
+                    ),
+                    Center(
+                        child: index == 2
+                            ? C_button(
+                                name: "Start",
+                                B_color: Colors.black,
+                                ontap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          SplashScreen()));
+                                },
+                              )
+                            : null)
                   ],
                 ),
               );
