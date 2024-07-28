@@ -1,3 +1,4 @@
+import 'package:fitness_app/services/Services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,6 +11,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  SplashService splashService = SplashService();
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    splashService.Login(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

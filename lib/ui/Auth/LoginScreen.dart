@@ -76,7 +76,84 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
             ),
-          )
+          ),
+          Positioned(
+            top: 530,
+            left: 180,
+            child: Text(
+              'Forget Password',
+              style: GoogleFonts.lindenHill(fontSize: 20, color: Colors.red),
+            ),
+          ),
+          Positioned(
+            top: 550,
+            left: 90,
+            child: Row(
+              children: [
+                TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Login',
+                      style: GoogleFonts.literata(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: Colors.white),
+                    )),
+                TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Sign Up',
+                      style: GoogleFonts.literata(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: Colors.white),
+                    ))
+              ],
+            ),
+          ),
+          Positioned(
+            top: 590,
+            left: 120,
+            child: Row(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.facebook,
+                      color: Colors.white,
+                    )),
+                Image(
+                    height: 20,
+                    image: AssetImage(
+                      'Assets/images/g2.png',
+                    ))
+              ],
+            ),
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 550, right: 130, left: 0),
+              child: Transform(
+                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                child: Divider(
+                  thickness: 6.0,
+                  color: Colors.grey.shade700,
+                ),
+              ),
+            ),
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 529, right: 130, left: 0),
+              child: Transform(
+                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                child: Divider(
+                  thickness: 6.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
