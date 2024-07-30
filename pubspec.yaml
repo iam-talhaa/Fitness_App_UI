@@ -37,7 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.6
   fluttertoast: ^8.2.6
   loading_animation_widget: ^1.2.1
-  
+
+  google_fonts: ^6.2.1
+
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +76,14 @@ flutter:
     - Assets/images/Frame 4.png
     - Assets/images/pq4.png
     - Assets/images/pq5.png
+    - Assets/images/b1.png
+    - Assets/images/b2.png
+    - Assets/images/b3.png
+    - Assets/images/L1.png
+    - Assets/images/L2.png
+    - Assets/images/L3.png
+    - Assets/images/g2.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

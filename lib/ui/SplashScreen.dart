@@ -1,5 +1,8 @@
+import 'package:fitness_app/services/Services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 // import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,6 +13,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  SplashService splashService = SplashService();
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    splashService.Login(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,10 +51,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 top: 510,
                 child: GestureDetector(
                   onTap: () {},
-                  child: Text(
-                    'start your Journey',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
-                  ),
+                  child: Text('start your Journey',
+                      style: GoogleFonts.roboto(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      )),
                 )),
             Container(
               child: Padding(
