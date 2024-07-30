@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/Auth/LoginScreen.dart';
 import 'package:fitness_app/ui/SplashScreen.dart';
 import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +118,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                                 ontap: () {
                                   Navigator.of(context).push(MaterialPageRoute(
                                       builder: (BuildContext context) =>
-                                          SplashScreen()));
+                                          LoginScreen()));
                                 },
                               )
                             : null)

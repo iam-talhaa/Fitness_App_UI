@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/making_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -91,7 +92,10 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Row(
               children: [
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => MakingProfile()));
+                    },
                     child: Text(
                       'Login',
                       style: GoogleFonts.literata(
@@ -100,7 +104,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           color: Colors.white),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => MakingProfile()));
+                    },
                     child: Text(
                       'Sign Up',
                       style: GoogleFonts.literata(

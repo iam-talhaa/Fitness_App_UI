@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-// ignore: duplicate_ignore
-// ignore: unused_import
-// ignore_for_file: unused_import
-
-import 'package:fitness_app/ui/SplashScreen.dart';
 import 'package:fitness_app/ui/making_profile.dart';
-import 'package:fitness_app/ui/onboarding_screen/onBoradingScreen.dart';
-import 'package:fitness_app/ui/start_workout.dart';
-import 'package:fitness_app/ui/workout_plan.dart';
-=======
-import 'package:fitness_app/ui/Auth/LoginScreen.dart';
-import 'package:fitness_app/ui/SplashScreen.dart';
->>>>>>> 71ef83cba52303ca2067992533965ebfa78226d1
 import 'package:flutter/material.dart';
 
 void main() {

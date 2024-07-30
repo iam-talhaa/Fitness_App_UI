@@ -116,8 +116,8 @@ class _MakingProfileState extends State<MakingProfile> {
             ),
           ),
           Positioned(
-            left: screenWidth * .55,
-            bottom: screenHeight * .76,
+            left: screenWidth * .65,
+            bottom: screenHeight * .72,
             child: Text(
               'Wed 24 Jan',
               style: TextStyle(
@@ -148,8 +148,8 @@ class _MakingProfileState extends State<MakingProfile> {
             ),
           ),
           Positioned(
-            left: screenWidth * .68,
-            bottom: screenHeight * .4,
+            left: screenWidth * .78,
+            bottom: screenHeight * .44,
             child: Text(
               'See All',
               style: TextStyle(
@@ -172,12 +172,13 @@ class _MakingProfileState extends State<MakingProfile> {
             ),
           ),
           Positioned(
-            bottom: screenHeight * .08,
+            bottom: screenHeight * 0.017,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Learn the Basics',
                 style: TextStyle(
+                  fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
                 ),
@@ -185,13 +186,14 @@ class _MakingProfileState extends State<MakingProfile> {
             ),
           ),
           Positioned(
-            left: screenWidth * .6,
-            bottom: screenHeight * .17,
+            left: screenWidth * .5,
+            bottom: screenHeight * .12,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 ' Hard workout',
                 style: TextStyle(
+                  fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontSize: 20,
                 ),
@@ -227,24 +229,24 @@ class _MakingProfileState extends State<MakingProfile> {
           ),
 
           Positioned(
-            top: screenHeight * .65,
+            top: screenHeight * .6,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: screenHeight * .20,
-                width: screenWidth * .20,
+                height: screenHeight * .4,
+                width: screenWidth * .4,
                 child: Image.asset('Assets/images/Frame 3.png'),
               ),
             ),
           ),
           Positioned(
-            left: screenWidth * .66,
-            top: screenHeight * .6,
+            left: screenWidth * .5,
+            top: screenHeight * .49,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: screenHeight * .15,
-                width: screenWidth * .20,
+                height: screenHeight * .4,
+                width: screenWidth * .4,
                 child: Image.asset('Assets/images/Frame 4.png'),
               ),
             ),
