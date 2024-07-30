@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   fluttertoast: ^8.2.6
   loading_animation_widget: ^1.2.1
+  
 
 dev_dependencies:
   flutter_test:
@@ -47,7 +48,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -67,6 +68,12 @@ flutter:
     - Assets/images/p2b.png
     - Assets/images/p3.png
     - Assets/images/s_pic.png
+    - Assets/images/pq2.png
+    - Assets/images/pq.png
+    - Assets/images/Frame 3.png
+    - Assets/images/Frame 4.png
+    - Assets/images/pq4.png
+    - Assets/images/pq5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
