@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class C_button extends StatelessWidget {
+class C_button extends StatefulWidget {
   final name;
   Color B_color;
   VoidCallback ontap;
@@ -13,19 +13,24 @@ class C_button extends StatelessWidget {
       required this.ontap});
 
   @override
+  State<C_button> createState() => _C_buttonState();
+}
+
+class _C_buttonState extends State<C_button> {
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 100),
       child: GestureDetector(
-        onTap: ontap,
+        onTap: widget.ontap,
         child: Container(
           height: 50,
           width: double.infinity,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20), color: B_color),
+              borderRadius: BorderRadius.circular(20), color: widget.B_color),
           child: Center(
             child: Text(
-              name,
+              widget.name,
               style: GoogleFonts.literata(
                   fontSize: 20,
                   color: Colors.white,
