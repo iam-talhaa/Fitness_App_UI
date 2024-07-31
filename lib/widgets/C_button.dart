@@ -19,13 +19,13 @@ class C_button extends StatefulWidget {
 class _C_buttonState extends State<C_button> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 100),
-      child: GestureDetector(
-        onTap: widget.ontap,
+    return GestureDetector(
+      onTap: widget.ontap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Container(
-          height: 50,
-          width: double.infinity,
+          height: 28,
+          width: 100,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20), color: widget.B_color),
           child: Center(
@@ -33,7 +33,7 @@ class _C_buttonState extends State<C_button> {
               widget.name,
               style: GoogleFonts.literata(
                   fontSize: 20,
-                  color: Colors.white,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
           ),
