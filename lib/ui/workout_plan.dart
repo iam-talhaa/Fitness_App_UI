@@ -113,28 +113,29 @@ class _WorkoutPlanState extends State<WorkoutPlan> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 100),
-                    child: Container(
-                      height: 39,
-                      width: 150,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color(0xff1B1919)),
-                      child: Center(
-                        child: Text(
-                          ' Workout',
-                          style: GoogleFonts.manuale(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => StartWorkout()));
+                      },
+                      child: Container(
+                        height: 39,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xff1B1919)),
+                        child: Center(
+                          child: Text(
+                            ' Workout',
+                            style: GoogleFonts.manuale(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24),
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  Container(
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: Color(0xff1B1919)))
                 ]),
           )),
     );
