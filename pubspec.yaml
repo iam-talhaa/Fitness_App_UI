@@ -85,6 +85,9 @@ flutter:
     - Assets/images/L2.png
     - Assets/images/L3.png
     - Assets/images/g2.png
+    - Assets/images/picture3.png
+    - Assets/images/profile2.png
+    - Assets/images/profile1.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
