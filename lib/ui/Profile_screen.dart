@@ -44,9 +44,25 @@ class _Profile_screenState extends State<Profile_screen> {
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.black),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text(
-                        'Name: TALHA KHAN',
+                        'Name:TALHA KHAN',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Divider(),
+                      Text(
+                        'Weight:TALHA KHAN',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Divider(),
+                      Text(
+                        'Age: 30 year old',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Divider(),
+                      Text(
+                        'Plan: Loss Weight',
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ],
