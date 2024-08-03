@@ -18,7 +18,7 @@ class _Days_warmUpState extends State<Days_warmUp> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -28,7 +28,7 @@ class _Days_warmUpState extends State<Days_warmUp> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back_sharp,
                     color: Colors.white,
                   )),
@@ -37,7 +37,7 @@ class _Days_warmUpState extends State<Days_warmUp> {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (BuildContext context) => MakingProfile()));
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.home,
                     color: Colors.white,
                   ))
@@ -47,25 +47,26 @@ class _Days_warmUpState extends State<Days_warmUp> {
             'Day 01-Warm Up',
             style: GoogleFonts.markoOne(fontSize: 20, color: Colors.white),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             'Warming up promotes the flow of synovial\nfluid around joints,which can improve \nlubrication and freedom of movement',
             style: GoogleFonts.marcellus(fontSize: 15, color: Colors.white),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           C_button(name: "350 cal", B_color: Color(0xffDA2BEA), ontap: () {}),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Image(height: 350, image: AssetImage('Assets/images/d1.png')),
-          SizedBox(
+          const Image(height: 350, image: AssetImage('Assets/images/d1.png')),
+          const SizedBox(
             height: 10,
           ),
-          C_button(name: "Start", B_color: Color(0xffDA2BEA), ontap: () {}),
+          C_button(
+              name: "Start", B_color: const Color(0xffDA2BEA), ontap: () {}),
         ],
       ),
     );
