@@ -40,12 +40,18 @@ class _LoginScreenState extends State<LoginScreen> {
           Positioned(
             left: 130,
             top: 280,
-            child: Text(
-              'Welcome \n Back',
-              style: GoogleFonts.abyssinicaSil(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  color: Colors.white),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => MakingProfile()));
+              },
+              child: Text(
+                'Welcome \n Back',
+                style: GoogleFonts.abyssinicaSil(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    color: Colors.white),
+              ),
             ),
           ),
           Positioned(
@@ -87,34 +93,21 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           Positioned(
-            top: 550,
-            left: 90,
+            top: 560,
+            left: 80,
             child: Row(
               children: [
-                TextButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => MakingProfile()));
-                    },
-                    child: Text(
-                      'Login',
-                      style: GoogleFonts.literata(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15,
-                          color: Colors.white),
-                    )),
-                TextButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => MakingProfile()));
-                    },
-                    child: Text(
-                      'Sign Up',
-                      style: GoogleFonts.literata(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15,
-                          color: Colors.white),
-                    ))
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 40,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.white),
+                    child: Center(child: Text('Login')),
+                  ),
+                )
               ],
             ),
           ),
@@ -166,3 +159,15 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
+
+// Text(
+//                         'Login',
+//                         style: GoogleFonts.literata(
+//                             fontWeight: FontWeight.bold,
+//                             fontSize: 15,
+//                             color: Colors.white),
+//                       ),
+  // Navigator.of(context).push(MaterialPageRoute(
+  //                       builder: (BuildContext context) => MakingProfile()));
+                  

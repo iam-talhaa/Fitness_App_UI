@@ -1,6 +1,7 @@
 // import 'package:fitness_app/ui/SplashScreen.dart';
 // ignore_for_file: unused_label
 
+import 'package:fitness_app/ui/Profile_screen.dart';
 import 'package:fitness_app/ui/workout_plan.dart';
 import 'package:flutter/material.dart';
 
@@ -93,11 +94,17 @@ class _MakingProfileState extends State<MakingProfile> {
             top: screenHeight * 0.01,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: CircleAvatar(
-                backgroundImage: AssetImage(
-                  'Assets/images/p3.png',
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => Profile_screen()));
+                },
+                child: CircleAvatar(
+                  backgroundImage: AssetImage(
+                    'Assets/images/p3.png',
+                  ),
+                  radius: 30, // Adjust radius as needed
                 ),
-                radius: 30, // Adjust radius as needed
               ),
             ),
           ),

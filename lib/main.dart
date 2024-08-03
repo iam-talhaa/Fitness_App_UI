@@ -1,5 +1,7 @@
+import 'package:fitness_app/ui/Auth/LoginScreen.dart';
 import 'package:fitness_app/ui/Days_warmUp.dart';
 import 'package:fitness_app/ui/Profile_screen.dart';
+import 'package:fitness_app/ui/SplashScreen.dart';
 import 'package:fitness_app/ui/making_profile.dart';
 import 'package:fitness_app/ui/start_workout.dart';
 import 'package:fitness_app/ui/workout_plan.dart';
@@ -21,7 +23,7 @@ class _FitnessState extends State<Fitness> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Profile_screen(),
+      home: SplashScreen(),
     );
   }
 }

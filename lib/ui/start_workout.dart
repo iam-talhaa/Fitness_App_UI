@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/Days_warmUp.dart';
 import 'package:fitness_app/ui/making_profile.dart';
 import 'package:flutter/material.dart';
 
@@ -134,41 +135,11 @@ class _StartWorkoutState extends State<StartWorkout> {
               left: MediaQuery.of(context).size.width * 0.2,
               child: Column(
                 children: [
-                  Container(
-                    height: Shight * .04,
-                    width: Swidth * .3,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(255, 85, 81, 78),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Skip',
-                        style: TextStyle(fontSize: 17, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Container(
-                    height: Shight * .04,
-                    width: Swidth * .3,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(255, 85, 81, 78),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Take Appointment',
-                        style: TextStyle(fontSize: 17, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Center(
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => Days_warmUp()));
+                    },
                     child: Container(
                       height: Shight * .04,
                       width: Swidth * .3,
@@ -178,8 +149,56 @@ class _StartWorkoutState extends State<StartWorkout> {
                       ),
                       child: Center(
                         child: Text(
-                          'Cancel',
+                          'Skip',
                           style: TextStyle(fontSize: 17, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => Days_warmUp()));
+                    },
+                    child: Container(
+                      height: Shight * .04,
+                      width: Swidth * .3,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Color.fromARGB(255, 85, 81, 78),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Take Appointment',
+                          style: TextStyle(fontSize: 17, color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Center(
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => Days_warmUp()));
+                      },
+                      child: Container(
+                        height: Shight * .04,
+                        width: Swidth * .3,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Color.fromARGB(255, 85, 81, 78),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Cancel',
+                            style: TextStyle(fontSize: 17, color: Colors.white),
+                          ),
                         ),
                       ),
                     ),

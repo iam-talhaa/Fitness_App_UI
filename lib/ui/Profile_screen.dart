@@ -68,7 +68,12 @@ class _Profile_screenState extends State<Profile_screen> {
                     ],
                   ),
                 ),
-              )
+              ),
+              IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Icon(Icons.home))
             ],
           )
         ],

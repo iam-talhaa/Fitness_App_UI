@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/making_profile.dart';
 import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -24,13 +25,18 @@ class _Days_warmUpState extends State<Days_warmUp> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   icon: Icon(
                     Icons.arrow_back_sharp,
                     color: Colors.white,
                   )),
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => MakingProfile()));
+                  },
                   icon: Icon(
                     Icons.home,
                     color: Colors.white,
