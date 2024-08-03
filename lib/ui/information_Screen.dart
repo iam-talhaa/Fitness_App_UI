@@ -1,4 +1,5 @@
 import 'package:fitness_app/res/Resources.dart';
+import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -62,11 +63,15 @@ class _InformationScreenState extends State<InformationScreen> {
                         borderSide: BorderSide(color: whiteColor))),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(left: 200),
+              child: C_button(name: 'Next', B_color: blueColor, ontap: () {}),
+            ),
             Align(
               alignment: Alignment.bottomLeft,
               child: Image(
                   fit: BoxFit.fill,
-                  height: 250,
+                  height: 220,
                   width: 200,
                   image: AssetImage('Assets/images/p20.png')),
             )

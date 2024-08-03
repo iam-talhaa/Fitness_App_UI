@@ -1,3 +1,4 @@
+import 'package:fitness_app/ui/Goal_screen.dart';
 import 'package:fitness_app/ui/information_Screen.dart';
 
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class _FitnessState extends State<Fitness> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: InformationScreen(),
+      home: GoalPage(),
     );
   }
 }
