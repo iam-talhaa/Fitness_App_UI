@@ -1,3 +1,4 @@
+import 'package:fitness_app/Utils/utilis.dart';
 import 'package:fitness_app/res/Resources.dart';
 import 'package:fitness_app/ui/information_Screen.dart';
 import 'package:fitness_app/ui/making_profile.dart';
@@ -116,8 +117,11 @@ class _LoginScreenState extends State<LoginScreen> {
             left: 260,
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => MakingProfile()));
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => MakingProfile()),
+                );
+                Utils().Login("Login SuccessFully");
               },
               child: Text(
                 'Skip....',

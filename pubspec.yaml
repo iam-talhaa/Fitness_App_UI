@@ -42,6 +42,9 @@ dependencies:
   stop_watch_timer: ^3.2.0
   simple_count_down_timer: ^1.0.4
   analog_clock: ^0.1.1
+  one_clock: ^2.0.1
+  flutter_analog_clock: ^1.0.3
+  flutter_timer_countdown: ^1.0.7
 
 
 dev_dependencies:

@@ -1,9 +1,4 @@
-import 'package:fitness_app/ui/Auth/LoginScreen.dart';
-import 'package:fitness_app/ui/Goal_screen.dart';
 import 'package:fitness_app/ui/SplashScreen.dart';
-import 'package:fitness_app/ui/Workout_time.dart';
-import 'package:fitness_app/ui/information_Screen.dart';
-import 'package:fitness_app/ui/intoroduction_Screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -23,7 +18,7 @@ class _FitnessState extends State<Fitness> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyApp(),
+      home: SplashScreen(),
     );
   }
 }

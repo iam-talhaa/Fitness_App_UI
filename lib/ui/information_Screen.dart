@@ -83,6 +83,9 @@ class _InformationScreenState extends State<InformationScreen> {
                         builder: (BuildContext Context) => GoalPage()));
                   }),
             ),
+            SizedBox(
+              height: 60,
+            ),
             Align(
               alignment: Alignment.bottomLeft,
               child: Image(

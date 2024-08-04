@@ -20,82 +20,86 @@ class _GoalPageState extends State<GoalPage> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Column(
-        children: [
-          Image(image: AssetImage("Assets/images/p21.png")),
-          Center(
-            child: Text(
-              'What’s your weight?',
-              style: GoogleFonts.literata(
-                  color: whiteColor, fontWeight: FontWeight.bold, fontSize: 24),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          children: [
+            Image(image: AssetImage("Assets/images/p21.png")),
+            Center(
+              child: Text(
+                'What’s your Goal?',
+                style: GoogleFonts.literata(
+                    color: whiteColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          Container(
-            height: 70,
-            width: 200,
-            decoration:
-                BoxDecoration(border: Border.all(width: 2, color: yellowColor)),
-            child: ListView.builder(
-                itemCount: goals.length,
-                itemBuilder: (BuildContext context, index) {
-                  print(index);
-                  return Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
-                      child: Text(
-                        goals[index].toString(),
-                        style: TextStyle(
-                            color: whiteColor,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              height: 70,
+              width: 200,
+              decoration: BoxDecoration(
+                  border: Border.all(width: 2, color: yellowColor)),
+              child: ListView.builder(
+                  itemCount: goals.length,
+                  itemBuilder: (BuildContext context, index) {
+                    print(index);
+                    return Center(
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text(
+                          goals[index].toString(),
+                          style: TextStyle(
+                              color: whiteColor,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
-                    ),
-                  );
+                    );
+                  }),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            C_button(
+                name: "Next",
+                B_color: pinkColor,
+                ontap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => LoginScreen()));
                 }),
-          ),
-          SizedBox(
-            height: 70,
-          ),
-          C_button(
-              name: "Next",
-              B_color: pinkColor,
-              ontap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => LoginScreen()));
-              }),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 130, left: 0),
-              child: Transform(
-                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
-                child: Divider(
-                  thickness: 6.0,
-                  color: whiteColor,
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.only(right: 130, left: 0),
+                child: Transform(
+                  transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                  child: Divider(
+                    thickness: 6.0,
+                    color: whiteColor,
+                  ),
                 ),
               ),
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 130, left: 0),
-              child: Transform(
-                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
-                child: Divider(
-                  thickness: 6.0,
-                  color: Colors.grey.shade700,
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.only(right: 130, left: 0),
+                child: Transform(
+                  transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                  child: Divider(
+                    thickness: 6.0,
+                    color: Colors.grey.shade700,
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
