@@ -1,6 +1,6 @@
 import 'package:fitness_app/res/Resources.dart';
 import 'package:fitness_app/ui/Auth/LoginScreen.dart';
-import 'package:fitness_app/ui/SplashScreen.dart';
+import 'package:fitness_app/ui/SplashScreen/SplashScreen.dart';
 import 'package:fitness_app/ui/intoroduction_Screen.dart';
 import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';

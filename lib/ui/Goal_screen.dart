@@ -49,7 +49,7 @@ class _GoalPageState extends State<GoalPage> {
                     print(index);
                     return Center(
                       child: Padding(
-                        padding: const EdgeInsets.only(bottom: 6),
+                        padding: const EdgeInsets.only(bottom: 10, top: 5),
                         child: Text(
                           goals[index].toString(),
                           style: TextStyle(

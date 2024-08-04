@@ -1,4 +1,4 @@
-import 'package:fitness_app/ui/SplashScreen.dart';
+import 'package:fitness_app/ui/SplashScreen/SplashScreen.dart';
 
 import 'package:flutter/material.dart';
 

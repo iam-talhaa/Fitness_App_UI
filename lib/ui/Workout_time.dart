@@ -24,7 +24,7 @@ class _Workout_timeState extends State<Workout_time> {
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(
-            backgroundColor: greyColor,
+            backgroundColor: const Color.fromARGB(255, 90, 86, 86),
             title: Text(
               'Workout Time',
               style: TextStyle(fontWeight: FontWeight.w500, color: whiteColor),
@@ -49,11 +49,11 @@ class _Workout_timeState extends State<Workout_time> {
                         descriptionTextStyle: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            color: whiteColor),
+                            color: blackColor),
                         timeTextStyle: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 30,
-                            color: whiteColor),
+                            color: blackColor),
                         format: CountDownTimerFormat.hoursMinutesSeconds,
                         endTime: DateTime.now().add(
                           Duration(

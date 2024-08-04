@@ -84,7 +84,7 @@ class _InformationScreenState extends State<InformationScreen> {
                   }),
             ),
             SizedBox(
-              height: 60,
+              height: 10,
             ),
             Align(
               alignment: Alignment.bottomLeft,
