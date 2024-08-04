@@ -64,7 +64,7 @@ class _WorkoutPlanState extends State<WorkoutPlan> {
                             ontap: () {}),
                       ),
                       C_button(
-                          name: '60 min',
+                          name: '350 kal',
                           B_color: Color(0xffCA1ED9),
                           ontap: () {})
                     ],

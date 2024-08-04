@@ -1,4 +1,5 @@
 import 'package:fitness_app/res/Resources.dart';
+import 'package:fitness_app/ui/Auth/LoginScreen.dart';
 import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +21,7 @@ class _GoalPageState extends State<GoalPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: blackColor,
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Image(image: AssetImage("Assets/images/p21.png")),
@@ -42,6 +43,7 @@ class _GoalPageState extends State<GoalPage> {
             child: ListView.builder(
                 itemCount: goals.length,
                 itemBuilder: (BuildContext context, index) {
+                  print(index);
                   return Center(
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 6),
@@ -59,7 +61,40 @@ class _GoalPageState extends State<GoalPage> {
           SizedBox(
             height: 70,
           ),
-          C_button(name: "Next", B_color: pinkColor, ontap: () {})
+          C_button(
+              name: "Next",
+              B_color: pinkColor,
+              ontap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => LoginScreen()));
+              }),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 130, left: 0),
+              child: Transform(
+                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                child: Divider(
+                  thickness: 6.0,
+                  color: whiteColor,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 130, left: 0),
+              child: Transform(
+                transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
+                child: Divider(
+                  thickness: 6.0,
+                  color: Colors.grey.shade700,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

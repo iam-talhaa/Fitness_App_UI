@@ -1,3 +1,4 @@
+import 'package:fitness_app/res/Resources.dart';
 import 'package:fitness_app/services/Services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -25,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.black,
+        color: blackColor,
         child: Stack(
           clipBehavior: Clip.none,
           fit: StackFit.loose,
@@ -36,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 top: 450,
                 child: Text(
                   'Finding strength in every step of the journey',
-                  style: TextStyle(fontSize: 15, color: Colors.white),
+                  style: TextStyle(fontSize: 15, color: whiteColor),
                 )),
             Container(
               child: Padding(
@@ -53,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   onTap: () {},
                   child: Text('start your Journey',
                       style: GoogleFonts.roboto(
-                        color: Colors.white,
+                        color: whiteColor,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       )),
@@ -65,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
                   child: Divider(
                     thickness: 6.0,
-                    color: Colors.grey.shade700,
+                    color: greyColor,
                   ),
                 ),
               ),
@@ -77,7 +78,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   transform: Matrix4.identity()..rotateZ(45 * 3.1415927 / 180),
                   child: Divider(
                     thickness: 6.0,
-                    color: Colors.white,
+                    color: whiteColor,
                   ),
                 ),
               ),

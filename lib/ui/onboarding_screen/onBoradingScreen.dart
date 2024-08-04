@@ -1,6 +1,7 @@
 import 'package:fitness_app/res/Resources.dart';
 import 'package:fitness_app/ui/Auth/LoginScreen.dart';
 import 'package:fitness_app/ui/SplashScreen.dart';
+import 'package:fitness_app/ui/intoroduction_Screen.dart';
 import 'package:fitness_app/widgets/C_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -68,7 +69,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                     style: GoogleFonts.abyssinicaSil(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: whiteColor),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20),
@@ -81,7 +82,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             height: 10,
                             width: 28,
                             decoration: BoxDecoration(
-                                color: index == 0 ? Colors.black : Colors.white,
+                                color: index == 0 ? blackColor : whiteColor,
                                 borderRadius: BorderRadius.circular(10)),
                           ),
                         ),
@@ -91,7 +92,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             height: 10,
                             width: 28,
                             decoration: BoxDecoration(
-                                color: index == 1 ? Colors.black : Colors.white,
+                                color: index == 1 ? blackColor : whiteColor,
                                 borderRadius: BorderRadius.circular(10)),
                           ),
                         ),
@@ -101,7 +102,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             height: 10,
                             width: 28,
                             decoration: BoxDecoration(
-                                color: index == 2 ? Colors.black : Colors.white,
+                                color: index == 2 ? blackColor : whiteColor,
                                 borderRadius: BorderRadius.circular(10)),
                           ),
                         ),
@@ -111,12 +112,12 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   Center(
                       child: index == 2
                           ? C_button(
-                              name: "Start =",
-                              B_color: redColor,
+                              name: "Start",
+                              B_color: whiteColor,
                               ontap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
                                     builder: (BuildContext context) =>
-                                        LoginScreen()));
+                                        IntroductionScreen()));
                               },
                             )
                           : null)
