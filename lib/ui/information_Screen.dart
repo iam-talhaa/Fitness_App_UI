@@ -16,6 +16,7 @@ class _InformationScreenState extends State<InformationScreen> {
   TextEditingController _weightcontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    print("object");
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.black,
