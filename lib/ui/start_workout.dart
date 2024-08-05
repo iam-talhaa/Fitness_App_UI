@@ -12,6 +12,7 @@ class StartWorkout extends StatefulWidget {
 class _StartWorkoutState extends State<StartWorkout> {
   @override
   Widget build(BuildContext context) {
+    print("chech");
     final Shight = MediaQuery.of(context).size.height;
     final Swidth = MediaQuery.of(context).size.height;
 
