@@ -10,6 +10,7 @@ class Profile_screen extends StatefulWidget {
 class _Profile_screenState extends State<Profile_screen> {
   @override
   Widget build(BuildContext context) {
+    print("object");
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color.fromARGB(255, 31, 28, 28),
